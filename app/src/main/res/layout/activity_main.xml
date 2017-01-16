@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5"
+    tools:context="com.example.android.badtranslatorsguild.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/translation"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bad Translators Guild"
+            android:textStyle="bold"
+            android:textColor="#00695C"
+            android:textSize="32sp"
+            android:padding="16dp"
+          />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:id="@+id/link_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/link_icon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:paddingRight="4dp"/>
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="www.badtranslators.com"
+                android:textColor="#00897B"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/link_icon"
+                android:paddingLeft="4dp"
+                android:paddingBottom="2dp"/>
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/email_icon"
+                android:layout_below="@id/link_icon"
+                android:scaleType="centerCrop"
+                android:paddingRight="4dp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ask.kenny@badtranslators.com"
+                android:paddingLeft="4dp"
+                android:textColor="#00897B"
+                android:textSize="18sp"
+                android:layout_below="@id/website"
+                android:layout_toRightOf="@id/email_icon"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textStyle="bold"
+            android:textColor="#00695C"
+            android:textSize="24sp"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#00897B"
+            android:text="We are a group of the finest artisans in the art of creating bad translations. If you are looking for someone with years of experience in churning out poorly crafted translations, look no further. Visit our website our contact us directly via email for more information." />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
